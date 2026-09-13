@@ -442,3 +442,16 @@ footer {
 #footer-link:hover {
     text-decoration: underline;
 }
+#warning-toast {
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4a2f2f;
+    color: #ff8a8a;
+    padding: 14px 20px;
+    border-radius: 8px;
+    border: 1px solid #ff5252;
+    font-weight: bold;
+    z-index: 20;
+}
