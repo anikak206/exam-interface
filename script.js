@@ -1,17 +1,17 @@
-const math = [
+﻿const math = [
     {
-        question: "If the sum of the first n terms of an AP is given by Sₙ = 3n² + 5n, then the common difference of the AP is:",
+        question: "If the sum of the first n terms of an AP is given by Sâ‚™ = 3nÂ² + 5n, then the common difference of the AP is:",
         options: ["6", "3", "5", "2"],
         correct: 0
     },
     {
-        question: "The value of the integral ∫₀^π x·sin(x) dx is:",
-        options: ["π", "2π", "π/2", "0"],
+        question: "The value of the integral âˆ«â‚€^Ï€ xÂ·sin(x) dx is:",
+        options: ["Ï€", "2Ï€", "Ï€/2", "0"],
         correct: 0
     },
     {
-        question: "If |z − 2 + 2i| ≤ 1, then the maximum value of |z| is:",
-        options: ["√2 + 1", "2√2 + 1", "2√2 − 1", "3"],
+        question: "If |z âˆ’ 2 + 2i| â‰¤ 1, then the maximum value of |z| is:",
+        options: ["âˆš2 + 1", "2âˆš2 + 1", "2âˆš2 âˆ’ 1", "3"],
         correct: 1
     },
     {
@@ -21,39 +21,39 @@ const math = [
     },
     {
         question: "For square matrices A and B of order 3, adj(AB) equals:",
-        options: ["adj(A) · adj(B)", "adj(B) · adj(A)", "|A| · adj(B)", "|B| · adj(A)"],
+        options: ["adj(A) Â· adj(B)", "adj(B) Â· adj(A)", "|A| Â· adj(B)", "|B| Â· adj(A)"],
         correct: 1
     },
     {
-        question: "The equation of the tangent to the curve y = x³ − 3x at the point where x = 2 is:",
-        options: ["y = 9x − 16", "y = 9x + 16", "y = 3x − 4", "y = 6x − 10"],
+        question: "The equation of the tangent to the curve y = xÂ³ âˆ’ 3x at the point where x = 2 is:",
+        options: ["y = 9x âˆ’ 16", "y = 9x + 16", "y = 3x âˆ’ 4", "y = 6x âˆ’ 10"],
         correct: 0
     }
 ];
 
 const phy = [
     {
-        question: "A particle starts with initial velocity 5 m/s and uniform acceleration 2 m/s². The distance covered in the 5th second is:",
+        question: "A particle starts with initial velocity 5 m/s and uniform acceleration 2 m/sÂ². The distance covered in the 5th second is:",
         options: ["12 m", "14 m", "16 m", "10 m"],
         correct: 1
     },
     {
-        question: "A ball is projected vertically upward with velocity 20 m/s. The maximum height reached is (g = 10 m/s²):",
+        question: "A ball is projected vertically upward with velocity 20 m/s. The maximum height reached is (g = 10 m/sÂ²):",
         options: ["10 m", "15 m", "20 m", "25 m"],
         correct: 2
     },
     {
-        question: "Resistances of 4 Ω and 6 Ω are connected in parallel and a current of 5 A flows through the combination. The voltage across it is:",
+        question: "Resistances of 4 Î© and 6 Î© are connected in parallel and a current of 5 A flows through the combination. The voltage across it is:",
         options: ["10 V", "12 V", "20 V", "24 V"],
         correct: 1
     },
     {
-        question: "Find the acceleration of block mass 𝑚. Assume pulleys are of massless and frictionless.",
-        options: ["𝑔/3", "2𝑔/3", "𝑔/2", "None of the above"],
+        question: "Find the acceleration of block mass ð‘š. Assume pulleys are of massless and frictionless.",
+        options: ["ð‘”/3", "2ð‘”/3", "ð‘”/2", "None of the above"],
         correct: 1
     },
     {
-        question: "A body of mass 2 kg is dropped from a height of 20 m. Its kinetic energy just before hitting the ground is (g = 10 m/s²):",
+        question: "A body of mass 2 kg is dropped from a height of 20 m. Its kinetic energy just before hitting the ground is (g = 10 m/sÂ²):",
         options: ["200 J", "300 J", "400 J", "500 J"],
         correct: 2
     },
@@ -66,17 +66,17 @@ const phy = [
 
 const chem = [
     {
-        question: "The hybridisation of the central atom in SF₆ is:",
-        options: ["sp³", "sp³d", "sp³d²", "sp²d"],
+        question: "The hybridisation of the central atom in SFâ‚† is:",
+        options: ["spÂ³", "spÂ³d", "spÂ³dÂ²", "spÂ²d"],
         correct: 2
     },
     {
         question: "Which of the following alkanes has the highest boiling point?",
-        options: ["CH₄", "C₂H₆", "C₃H₈", "n-C₄H₁₀"],
+        options: ["CHâ‚„", "Câ‚‚Hâ‚†", "Câ‚ƒHâ‚ˆ", "n-Câ‚„Hâ‚â‚€"],
         correct: 3
     },
     {
-        question: "The total number of sigma (σ) bonds in one molecule of benzene (C₆H₆) is:",
+        question: "The total number of sigma (Ïƒ) bonds in one molecule of benzene (Câ‚†Hâ‚†) is:",
         options: ["6", "9", "12", "18"],
         correct: 2
     },
@@ -86,12 +86,12 @@ const chem = [
         correct: 3
     },
     {
-        question: "The IUPAC name of CH₃−CH(OH)−CH₃ is:",
+        question: "The IUPAC name of CHâ‚ƒâˆ’CH(OH)âˆ’CHâ‚ƒ is:",
         options: ["propan-1-ol", "propan-3-ol", "propan-2-ol", "2-methylethanol"],
         correct: 2
     },
     {
-        question: "The oxidation state of Mn in KMnO₄ is:",
+        question: "The oxidation state of Mn in KMnOâ‚„ is:",
         options: ["+3", "+5", "+6", "+7"],
         correct: 3
     }
