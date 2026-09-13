@@ -313,3 +313,10 @@ document.getElementById("submit-btn").style.visibility = "hidden";
 document.getElementById("question-nav").style.visibility = "hidden";
 document.getElementById("time-remaining").style.visibility = "hidden";
 document.getElementById("timer").style.visibility = "hidden";
+
+window.addEventListener("beforeunload", function (e) {
+    if (window.questions && window.questions.length > 0) {
+        e.preventDefault();
+        e.returnValue = "";
+    }
+});
