@@ -320,3 +320,18 @@ window.addEventListener("beforeunload", function (e) {
         e.returnValue = "";
     }
 });
+
+
+document.addEventListener("keydown", function (e) {
+    if (!window.questions || questions.length === 0) return;
+
+    if (e.key === "ArrowRight" && cur < questions.length - 1) next();
+    if (e.key === "ArrowLeft" && cur > 0) prev();
+
+    if (["1", "2", "3", "4"].includes(e.key)) {
+        const idx = parseInt(e.key) - 1;
+        if (idx < questions[cur].options.length) select(cur, idx);
+    }
+
+    if (e.ctrlKey && e.key === "Enter") submit();
+});
