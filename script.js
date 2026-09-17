@@ -235,6 +235,14 @@ function submit() {
     }
 
     document.getElementById("end-score").textContent = score + " / " + questions.length;
+
+    var scoreWrap = document.getElementById("end-score-wrap");
+    var tabSwitchNote = document.createElement("div");
+    tabSwitchNote.style.marginTop = "10px";
+    tabSwitchNote.style.fontSize = "13px";
+    tabSwitchNote.style.color = "#888";
+    tabSwitchNote.innerHTML = "Tab switches during exam: <span id='tab-switch-count'>" + window.tabSwitchCount + "</span>";
+    scoreWrap.appendChild(tabSwitchNote);
     document.getElementById("overlay").style.display = "block";
     document.getElementById("end-popup").style.display = "flex";
 }
@@ -334,4 +342,20 @@ document.addEventListener("keydown", function (e) {
     }
 
     if (e.ctrlKey && e.key === "Enter") submit();
+});
+
+
+window.tabSwitchCount = 0;
+
+document.addEventListener("visibilitychange", function () {
+    if (document.hidden && window.questions && window.questions.length > 0) {
+        window.tabSwitchCount++;
+        var banner = document.getElementById("focus-warning");
+        banner.style.display = "block";
+    }
+});
+
+window.addEventListener("focus", function () {
+    var banner = document.getElementById("focus-warning");
+    if (banner) banner.style.display = "none";
 });

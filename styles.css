@@ -455,3 +455,23 @@ footer {
     font-weight: bold;
     z-index: 20;
 }
+
+#focus-warning {
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4a2f2f;
+    color: #ff8a8a;
+    padding: 14px 24px;
+    border-radius: 8px;
+    border: 1px solid #ff5252;
+    font-weight: bold;
+    z-index: 20;
+}
+
+#tab-switch-count {
+    color: #ff8a8a;
+    font-weight: bold;
+}
