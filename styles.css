@@ -475,3 +475,79 @@ footer {
     color: #ff8a8a;
     font-weight: bold;
 }
+
+/* ---------- Mobile responsiveness ---------- */
+@media (max-width: 768px) {
+    .topbar {
+        flex-wrap: wrap;
+        padding: 12px 15px;
+        gap: 8px;
+    }
+
+    .qs-links {
+        margin-left: 0;
+        gap: 20px;
+        order: 3;
+        width: 100%;
+    }
+
+    .container {
+        flex-direction: column;
+        overflow-y: auto;
+    }
+
+    .main {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .sidebar {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 12px;
+        border-left: none;
+        border-top: 1px solid #2a2a2a;
+    }
+
+    .btn {
+        width: 40px;
+        margin: 4px;
+    }
+
+    .option-btn {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    #popup {
+        min-width: 85vw;
+        padding: 30px 20px;
+    }
+
+    #end-popup {
+        width: 95vw;
+        padding: 25px 20px;
+    }
+
+    #buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    #prev-btn, #next-btn, #submit-btn, #mark-btn {
+        float: none;
+        margin: 0;
+        flex: 1 1 auto;
+        min-width: 100px;
+    }
+
+    #results-table {
+        font-size: 12px;
+    }
+
+    .td-question {
+        max-width: 140px;
+    }
+}
