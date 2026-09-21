@@ -359,3 +359,13 @@ window.addEventListener("focus", function () {
     var banner = document.getElementById("focus-warning");
     if (banner) banner.style.display = "none";
 });
+
+
+function updateProgress() {
+    var answeredCount = 0;
+    for (let i = 0; i < answers.length; i++) {
+        if (answers[i] != null) answeredCount++;
+    }
+    var el = document.getElementById("progress-indicator");
+    if (el) el.innerHTML = answeredCount + " of " + questions.length + " answered";
+}
