@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Online Exam Simulation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#1a1a2e">
+    <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -15,7 +18,8 @@
             <a href="#" onclick="quickstart('phy'); return false;">Physics</a>
             <a href="#" onclick="quickstart('chem'); return false;">Chemistry</a>
         </nav>
-        <div id="progress-indicator">0 of 0 answered</div>
+        <button id="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme" style="background:none;border:1px solid currentColor;color:inherit;padding:4px 8px;border-radius:6px;cursor:pointer;">Theme</button>
+        <div id="progress-indicator" aria-live="polite">0 of 0 answered</div>
         <div id="time-remaining">Time left: </div>
         <div id="timer">00:00</div>
     </div>
@@ -84,5 +88,10 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("sw.js").catch(() => {});
+      }
+    </script>
 </body>
 </html>

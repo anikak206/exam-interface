@@ -558,3 +558,32 @@ footer {
     font-size: 15px;
     color: #bcbcbc;
 }
+
+/* Dark theme */
+body.dark {
+    background: #0f0f1a;
+    color: #e6e6e6;
+}
+body.dark .topbar { background: #1a1a2e; }
+body.dark .container { background: #16162a; }
+body.dark .main { background: #1e1e38; }
+body.dark .sidebar { background: #16162a; }
+body.dark .option-btn { background: #2a2a4a; color: #e6e6e6; }
+body.dark .option-btn.sel { background: #4a4a8a; }
+body.dark #end-popup { background: #1e1e38; color: #e6e6e6; }
+
+/* Accessibility focus */
+button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible {
+    outline: 3px solid #6b6be0;
+    outline-offset: 2px;
+}
+
+/* Results table colors */
+.res-correct { color: #34a15f; font-weight: bold; }
+.res-wrong { color: #e05a5a; font-weight: bold; }
+.res-skip { color: #d68910; font-weight: bold; }
+
+/* PWA install hint */
+@media (display-mode: standalone) {
+    body { padding-top: env(safe-area-inset-top); }
+}
